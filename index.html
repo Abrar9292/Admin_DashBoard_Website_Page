@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPro Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>AdminPro</span>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i> Users</a></li>
+                <li><a href="#"><i class="fa-solid fa-box"></i> Products</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Orders</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+
+            <div class="sidebar-profile">
+                <img src="images/profile.jpg" alt="Admin Profile">
+                <div>
+                    <h6>Abrar Admin</h6>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <nav class="top-navbar">
+                <button class="toggle-btn" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <h4>Dashboard Overview</h4>
+                    <p>Welcome back, Abrar. Here is today’s business report.</p>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search activity...">
+                    </div>
+
+                    <button class="icon-btn" id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span></span>
+                    </button>
+
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <button class="profile-btn">
+                        <img src="images/profile.jpg" alt="Admin Profile">
+                        <span>Abrar</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="notification-box" id="notificationBox">
+                <h5>Notifications</h5>
+                <p>New user registered</p>
+                <p>24 new orders received</p>
+                <p>Payment completed</p>
+            </div>
+
+            <section class="cards-section">
+                <div class="cards-grid">
+
+                    <div class="stat-card">
+                        <div class="card-icon blue"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <p>Total Users</p>
+                            <h3>12,450</h3>
+                            <span class="success">+18% this month</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="card-icon green"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <div>
+                            <p>Revenue</p>
+                            <h3>₹8.4L</h3>
+                            <span class="success">+24% growth</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="card-icon orange"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div>
+                            <p>Orders</p>
+                            <h3>2,845</h3>
+                            <span class="warning">320 pending</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="card-icon purple"><i class="fa-solid fa-chart-line"></i></div>
+                        <div>
+                            <p>Conversion</p>
+                            <h3>64.8%</h3>
+                            <span class="success">+9.5% improved</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="dashboard-grid">
+                <div class="chart-card">
+                    <div class="panel-header">
+                        <h5>Sales Performance</h5>
+                        <button>View Report</button>
+                    </div>
+
+                    <div class="chart-bars monthly-chart">
+                        <div class="month-bar">
+                            <span style="height:45%"></span>
+                            <p>Jan</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:70%"></span>
+                            <p>Feb</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:55%"></span>
+                            <p>Mar</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:88%"></span>
+                            <p>Apr</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:75%"></span>
+                            <p>May</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:95%"></span>
+                            <p>Jun</p>
+                        </div>
+
+                        <div class="month-bar">
+                            <span style="height:80%"></span>
+                            <p>Jul</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="panel-header">
+                        <h5>Traffic Sources</h5>
+                    </div>
+
+                    <div class="circle-chart">
+                        <div>
+                            <h3>74%</h3>
+                            <p>Organic Traffic</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <div class="table-card">
+                    <div class="panel-header">
+                        <h5>Recent Activity</h5>
+                        <button>Export</button>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Activity</th>
+                                <th>Status</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activityTable">
+                            <tr>
+                                <td>Rahul Sharma</td>
+                                <td>Placed new order</td>
+                                <td><span class="badge success-bg">Completed</span></td>
+                                <td>10 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>Priya Patil</td>
+                                <td>Registered account</td>
+                                <td><span class="badge info-bg">New</span></td>
+                                <td>20 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>Aman Khan</td>
+                                <td>Payment pending</td>
+                                <td><span class="badge warning-bg">Pending</span></td>
+                                <td>35 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>Sneha More</td>
+                                <td>Updated profile</td>
+                                <td><span class="badge success-bg">Done</span></td>
+                                <td>1 hour ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
