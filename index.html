@@ -12,6 +12,16 @@
 
 <body>
 
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <button id="backToTop" class="back-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <div class="dashboard-wrapper">
 
         <aside class="sidebar" id="sidebar">
@@ -79,6 +89,12 @@
                 <p>Payment completed</p>
             </div>
 
+            <div class="profile-dropdown" id="profileDropdown">
+                <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </div>
+
             <section class="cards-section">
                 <div class="cards-grid">
 
@@ -122,6 +138,7 @@
             </section>
 
             <section class="dashboard-grid">
+
                 <div class="chart-card">
                     <div class="panel-header">
                         <h5>Sales Performance</h5>
@@ -178,6 +195,58 @@
                         </div>
                     </div>
                 </div>
+
+            </section>
+
+            <section class="progress-section">
+                <div class="table-card">
+
+                    <div class="panel-header">
+                        <h5>Team Progress</h5>
+                        <button>View All</button>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>UI Design</span>
+                            <strong>92%</strong>
+                        </div>
+                        <div class="custom-progress">
+                            <div class="progress-fill blue-fill" style="width:92%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Backend API</span>
+                            <strong>78%</strong>
+                        </div>
+                        <div class="custom-progress">
+                            <div class="progress-fill green-fill" style="width:78%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Marketing</span>
+                            <strong>66%</strong>
+                        </div>
+                        <div class="custom-progress">
+                            <div class="progress-fill orange-fill" style="width:66%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Testing</span>
+                            <strong>84%</strong>
+                        </div>
+                        <div class="custom-progress">
+                            <div class="progress-fill purple-fill" style="width:84%"></div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <section class="table-section">
@@ -196,6 +265,7 @@
                                 <th>Time</th>
                             </tr>
                         </thead>
+
                         <tbody id="activityTable">
                             <tr>
                                 <td>Rahul Sharma</td>
@@ -203,18 +273,21 @@
                                 <td><span class="badge success-bg">Completed</span></td>
                                 <td>10 min ago</td>
                             </tr>
+
                             <tr>
                                 <td>Priya Patil</td>
                                 <td>Registered account</td>
                                 <td><span class="badge info-bg">New</span></td>
                                 <td>20 min ago</td>
                             </tr>
+
                             <tr>
                                 <td>Aman Khan</td>
                                 <td>Payment pending</td>
                                 <td><span class="badge warning-bg">Pending</span></td>
                                 <td>35 min ago</td>
                             </tr>
+
                             <tr>
                                 <td>Sneha More</td>
                                 <td>Updated profile</td>
